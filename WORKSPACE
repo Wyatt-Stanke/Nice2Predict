@@ -60,7 +60,7 @@ load("@com_github_grpc_grpc//bazel:grpc_extra_deps.bzl", "grpc_extra_deps")
 
 grpc_extra_deps()
 
-new_http_archive(
+http_archive(
     name = "com_github_open_source_parsers_jsoncpp",
     build_file = "//third_party:BUILD.jsoncpp",
     sha256 = "3671ba6051e0f30849942cc66d1798fdf0362d089343a83f704c09ee7156604f",
@@ -68,7 +68,7 @@ new_http_archive(
     url = "https://github.com/open-source-parsers/jsoncpp/archive/1.8.3.tar.gz",
 )
 
-new_http_archive(
+http_archive(
     name = "com_github_cinemast_libjson_rpc_cpp",
     build_file = "//third_party:BUILD.jsonrpc",
     sha256 = "888c10f4be145dfe99e007d5298c90764fb73b58effb2c6a3fc522a5b60a18c6",
