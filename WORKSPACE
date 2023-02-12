@@ -1,8 +1,8 @@
+workspace(name = "com_ethz_srl_nice2predict")
+
 load("//tools/build_defs:externals.bzl", "new_patched_http_archive")
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
-
-workspace(name = "com_ethz_srl_nice2predict")
 
 http_archive(
     name = "org_pubref_rules_protobuf",
